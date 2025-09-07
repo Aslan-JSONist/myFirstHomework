@@ -1,0 +1,29 @@
+name: Display date time
+
+on:
+  push:
+    branches: [ "**" ]
+  pull_request:
+    branches: [ "**" ]
+
+  
+  workflow_dispatch:
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run a one-line script
+        run: echo Hello, world!
+
+      - name: Display current date and time
+        run: |
+          echo "Текущая дата и время в ETC: $(date)"
+          echo "Запущено для события: ${{ github.event_name }}"
+          echo "Ветка: ${{ github.ref }}"
+# Редактирование небольшое ради коммита
