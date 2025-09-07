@@ -1,0 +1,29 @@
+# Compiled output
+target/
+build/
+*.class
+*.jar
+*.war
+*.ear
+
+# IDE-specific files
+.idea/
+*.iml
+*.iws
+.project
+.classpath
+.settings/
+.vscode/
+
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+log/
+
+# Maven/Gradle specific
+.mvn/wrapper/maven-wrapper.jar
+.gradle/
+!gradle/wrapper/gradle-wrapper.jar # Keep the wrapper script but ignore the downloaded jar
